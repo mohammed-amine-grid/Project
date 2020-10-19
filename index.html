@@ -1,40 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>JS Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <script src="./app.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="calc-grid">
-        <div class="screen">
-            <div class="previous-op"></div>
-            <div class="current-op display"></div>
+
+    <div id="wrapper">
+
+        <div class="title">
+            <h1>Calculator</h1>
         </div>
-        <button class="two">AC</button>
-        <button class="del">DEL</button>
-        <button class="operator">÷</button>
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="operator">*</button>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="operator">+</button>
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="operator">-</button>
-        <button class="dec">.</button>
-        <button class="number">0</button>
-        <button class="two equal">=</button>
+
+        <div id="container">
+
+            <div id="display">
+                <h1 id="display__numbers">0</h1>
+            </div>
+
+            <button id="clear" class="btn btn--other btn--long-horizontal">AC</button>
+            <button id="divide" class="btn btn--other btn--operator">÷</button>
+            <button id="multiply" class="btn btn--other btn--operator">×</button>
+
+            <button id="seven" class="btn btn--number">7</button>
+            <button id="eight" class="btn btn--number">8</button>
+            <button id="nine" class="btn btn--number">9</button>
+            <button id="subtract" class="btn btn--other btn--operator">-</button>
+
+
+            <button id="four" class="btn btn--number">4</button>
+            <button id="five" class="btn btn--number">5</button>
+            <button id="six" class="btn btn--number">6</button>
+            <button id="add" class="btn btn--other btn--operator">+</button>
+
+
+            <button id="one" class="btn btn--number">1</button>
+            <button id="two" class="btn btn--number">2</button>
+            <button id="three" class="btn btn--number">3</button>
+            <button id="equals" class="btn btn--operator btn--other btn--long-vertical">=</button>
+
+            <button id="zero" class="btn btn--number btn--long-horizontal">0</button>
+            <button id="decimal" class="btn btn--decimal">.</button>
+
+        </div>
+
     </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
