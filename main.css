@@ -45,3 +45,15 @@ background-color: rgb(255, 255, 255, .75);
     align-items: flex-end;
     padding: 10px;
 }
+
+.screen .previous-op {
+    color: rgb(255, 255, 255, .75);
+    font-family: fantasy;
+    font-size: 1.5rem;
+}
+
+.screen .current-op {
+    color: white;
+    font-family: fantasy;
+    font-size: 2.5rem;
+}
