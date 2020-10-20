@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background: linear-gradient(to right, #EFE9F4, #EEF0F2);
+    background: linear-gradient(to right, #EFE9F4, #ADD7F6);
     padding-top: 30px;
     padding-bottom: 30px;
 }
