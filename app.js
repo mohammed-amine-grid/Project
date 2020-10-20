@@ -1,6 +1,7 @@
 // key assignments
 var op;
 var first;
+var second;
 
 $('.btn').click(function () {
     var firstNum = $('.input').val() //
