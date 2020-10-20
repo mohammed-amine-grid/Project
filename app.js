@@ -1,37 +1,42 @@
+// key assignments
 $('.btn').click(function () {
-    var first_num = $('.input').val()
-    var number = $(this).html();
-    first_num += number;
-    $('.input').val(first_num);
+    var firstNum = $('.input').val() //
+    var numbers = $(this).html();
+    firstNum += numbers;
+    $('.input').val(firstNum);
 })
 
-function first_equal() {
-    start_value = parseFloat($('.input').val());
-    $('.input').val('');
+function firstValue() {
+    first = parseFloat($('.input').val()); // first value - global variable
+    $('.input').val(''); // pend next key
 
 }
 
 $('.operation').click(function () {
-    first_equal();
-    sec_value = parseFloat($('.calculate_field').val());
+    firstValue(); // pend second number
+    secValue = parseFloat($('.input').val());
     var operation = $(this).html();
-    op = operation;
-    console.log(operation);
+    op = operation //global var for equal
+
 
 })
 
 $('.equal').click(function () {
-    second_value = parseFloat($('.calculate_field').val());
+    var second = parseFloat($('.input').val());
     if (op === "+") {
-        $('.calculate_field').val(start_value + second_value);
+        return $('.input').val(first + second);
     }
     else if (op === "-") {
-        $('.calculate_field').val(start_value - second_value);
+        $('.input').val(first - second);
     }
     else if (op === "*") {
-        $('.calculate_field').val(start_value * second_value);
+        $('.input').val(first * second);
     }
-    else if (op === "/") {
-        $('.calculate_field').val(start_value / second_value);
+    else {
+        $('.input').val(first / second);
     }
+})
+
+$('.clear').click(function () {
+    $('.input').val('');
 })
