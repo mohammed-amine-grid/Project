@@ -24,3 +24,33 @@ body {
      text-align: right;
      font-size: 40px;
  }
+
+.numbers {
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-gap: 15px;
+}
+
+ .btcss {
+background: rgba(0, 0, 0, .5);
+border: 1px solid #111;
+padding: 20px;
+color: #EEE;
+border-radius: 5px;
+font-size: 22px;
+cursor: pointer;
+ }
+
+ .clear {
+     grid-column: span 3;
+     background: rgb(184, 22, 22);
+ }
+
+ 
+
+ .equal {
+grid-column: span 3;
+background: green;
+ }

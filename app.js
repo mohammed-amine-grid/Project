@@ -1,4 +1,7 @@
 // key assignments
+var op;
+var first;
+
 $('.btn').click(function () {
     var firstNum = $('.input').val() //
     var numbers = $(this).html();
@@ -21,10 +24,11 @@ $('.operation').click(function () {
 
 })
 
-$('.equal').click(function () {
+$('.equal').click(function () { // fix equal alone
     var second = parseFloat($('.input').val());
+
     if (op === "+") {
-        return $('.input').val(first + second);
+        $('.input').val(first + second);
     }
     else if (op === "-") {
         $('.input').val(first - second);
@@ -32,8 +36,13 @@ $('.equal').click(function () {
     else if (op === "*") {
         $('.input').val(first * second);
     }
-    else {
+
+
+    else if (op === "/") {
         $('.input').val(first / second);
+    }
+    else {
+        $('.input').val('')
     }
 })
 
